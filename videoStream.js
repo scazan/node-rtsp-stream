@@ -100,7 +100,7 @@ VideoStream.prototype.pipeStreamToSocketServer = function() {
       if (client.readyState === 1) {
         results.push(client.send(data, opts))
       } else {
-        results.push(console.log("Error: Client (" + i + ") not connected."))
+        results.push(console.log("Error: Client (" + client + ") not connected."))
       }
     }
     return results
