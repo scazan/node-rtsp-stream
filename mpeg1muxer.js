@@ -24,7 +24,7 @@ Mpeg1Muxer = function(options) {
     "-i",
     this.url,
     '-f',
-    'mpegts',
+    'mpeg1video',
     '-codec:v',
     'mpeg1video',
     // additional ffmpeg options go here
